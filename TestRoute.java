@@ -13,10 +13,11 @@ public class TestRoute {
         cityMap.put("London", "Helsinki");
 
         //T -> S -> M -> B -> L -> H
-printRoute(cityMap);
+        printRoute(cityMap);
     }
-    private static void printRoute (Map<String, String> map) {
-        Map <String, String> reverseMap = new HashMap<>();
+
+    private static void printRoute(Map<String, String> map) {
+        Map<String, String> reverseMap = new HashMap<>();
         for (Map.Entry<String, String> pair : map.entrySet()) {
             reverseMap.put(pair.getValue(), pair.getKey());
         }
